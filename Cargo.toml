@@ -25,6 +25,7 @@ dbus = { version = "0.9", optional = true }
 lazy_static = { version = "1", optional = true }
 image = { version = "0.25", optional = true }
 zbus = { version = "4", optional = true }
+zvariant = { version = "4", optional = true }
 serde = { version = "1", optional = true }
 log = "0.4"
 env_logger ={ version ="0.11", optional = true }
@@ -41,7 +42,7 @@ default = ["z"]
 #`server = []
 d = ["dbus"]
 d_vendored = ["dbus/vendored"]
-z = ["zbus", "serde", "async"]
+z = ["zbus", "serde", "async", "zvariant"]
 async = []
 debug_namespace = []
 images = ["image", "lazy_static"]
